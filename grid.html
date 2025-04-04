@@ -1,0 +1,87 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>grid practice</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        }
+
+        h1 {
+            font-family: "Comic Neue", cursive;
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 4fr 0.5fr;
+            grid-template-rows: 0.4fr 1.6fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "Header Sidebar"
+                "Body SidebarPart2";
+        }
+
+        .Header {
+            grid-area: Header;
+            background: rgb(160, 221, 205);
+            border: 2px solid rgb(117, 175, 190);
+        }
+
+        .Sidebar {
+            grid-area: Sidebar;
+            background: rgb(135, 17, 37);
+            border: 2px solid rgb(211, 64, 6);
+    
+        }
+
+        .Body {
+            grid-area: Body;
+            background: rgb(48, 72, 12);
+            border: 4px solid black;
+        }
+
+        .SidebarPart2 {
+            grid-area: SidebarPart2;
+            background: rgb(81, 73, 167);
+            border: 8px dashed red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="Header">
+            <h1>header</h1>
+        </div>
+        <div class="Sidebar">
+            <h3>Sidebar</h3>
+        </div>
+        
+        <div class="Body">
+            <h2>Body</h4>
+        </div>
+        <div class="SidebarPart2"><h2>Sidebar Part 2</h2></div>
+    </div>
+
+
+
+<p><a href="index.html">Back Home</a></p>
+</body>
+
+
+</html>
